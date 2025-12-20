@@ -1,7 +1,7 @@
 ---
 enable: true
 title: ""
-description: My Signals lets people signal their intent, just by browsing or using apps.
+description: MySignals lets people signal their intent, just by browsing or using apps.
 
 button:
   enable: true

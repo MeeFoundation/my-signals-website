@@ -1,6 +1,6 @@
 ---
 enable: true
-title: "My Signals"
+title: "MySignals"
 
 subtitle: "Editor's Draft: 8 December 2025"
 
@@ -59,7 +59,7 @@ sections:
       - number: "3"
         heading: "Purpose and Characteristics"
         level: 3
-        content: "The purpose of My Signals is to define a standardized framework that developers can use for signaling. It has these characteristics:"
+        content: "The purpose of MySignals is to define a standardized framework that developers can use for signaling. It has these characteristics:"
         lists:
           - type: "ul"
             items:
