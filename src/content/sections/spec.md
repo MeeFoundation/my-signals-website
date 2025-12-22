@@ -81,10 +81,13 @@ sections:
 
               - "AgeProtect: Signal the need for an age-protected experience (e.g. age-appropriate) and tell the service provider which age verification and consent management endpoints you use. [[**AgeProtect**]](#ref-ageprotect)."
 
-              - "Identity: Tell the service provider who you are. Give them a (self-sovereign) digital identifier. Or tell them which IdP (identity provider(s)) you use. [[**NASCAR**]](#ref-nascar)."
+              - "Identifier: Tell the service provider who you are. Give them a (self-sovereign) digital identifier."
 
-              - "Allows the person's wallet-agent to signal that it supports OpenID SIOPv2 allowing the site/app to display a \"Continue-with-wallet\" button for password-less login. [[**SIOPv2**]](#ref-siopv2)."
+              - "IdP: Tell the service provider which IdP (identity provider(s)) you use. [[**NASCAR**]](#ref-nascar)."
 
+              - "SIOPv2: Tell the service provider that your agent supports OpenID SIOPv2 allowing the site/app to display a "Continue-with-wallet" button for password-less login. [[**SIOPv2**]](#ref-siopv2)."
+
+              - "PDN: Give the service provider your Personal Data Network endpoint to allow you to manage the personal information they hold about you."
 
   - number: "2"
     heading: "Definitions"
