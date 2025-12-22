@@ -72,15 +72,19 @@ sections:
       - number: "4"
         heading: "Use Cases"
         level: 3
-        content: "The My Signals framework is designed to support a wide range of current and anticipated signaling needs. It:"
+        content: "The My Signals framework is designed to support a wide range of current and anticipated signaling needs. Use cases include:"
         lists:
           - type: "ul"
             items:
-              - "Allows the person to proffer their privacy requirements as contractual terms to websites and apps using IEEE 7012. [[**IEEE7012**]](#ref-ieee7012)."
-              - "Allows the person's wallet-agent to signal to websites/apps (i) their intent to have an age-appropriate internet experience, and optionally (ii) indicate their preferred choice of age credential provider service. [[**AgeProtect**]](#ref-ageprotect)."
-              - "Allows the person's agent to signal which authentication provider(s) they use to log in to sites/apps. This allows a large number of Identity Providers (IdPs) to be supported by the app/site while solving the so-called NASCAR problem. [[**NASCAR**]](#ref-nascar)."
+              - "Privacy: Provide legally binding notice that the service provider must respect your right that they “Do Not Sell” your personal information using an alternative implementation of the Global Privacy Control"
+              - "MyTerms: Negotiate and digitally sign mutually acceptable contract related to privacy and data sharing. Allows the person to proffer their privacy requirements to the service provider as contractual terms using IEEE 7012. [[**IEEE7012**]](#ref-ieee7012)."
+
+              - "AgeProtect: Signal the need for an age-protected experience (e.g. age-appropriate) and tell the service provider which age verification and consent management endpoints you use. [[**AgeProtect**]](#ref-ageprotect)."
+
+              - "Identity: Tell the service provider who you are. Give them a (self-sovereign) digital identifier. Or tell them which IdP (identity provider(s)) you use. [[**NASCAR**]](#ref-nascar)."
+
               - "Allows the person's wallet-agent to signal that it supports OpenID SIOPv2 allowing the site/app to display a \"Continue-with-wallet\" button for password-less login. [[**SIOPv2**]](#ref-siopv2)."
-              - "Could be used to support an alternative implementation of the Global Privacy Control that allows it to conform to My Signals framework. This would afford improved privacy characteristics as well as support for mobile apps."
+
 
   - number: "2"
     heading: "Definitions"
