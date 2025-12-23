@@ -43,7 +43,7 @@ sections:
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-GPC: 1"
-
+        content: "In this simple example, the “negotiation” (if it can be called that) is nothing more than the agent sending a boolean to the service provider and the service provider having no alternative but to accept it since it is (at least in some legal jurisdictions) an explicit opt-out signal that the service provider must honor."
       - number: "2"
         heading: "Limitations of Current Approaches"
         level: 3
