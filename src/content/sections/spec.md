@@ -76,18 +76,18 @@ sections:
         lists:
           - type: "ul"
             items:
-              - "Privacy: Provide legally binding notice that the service provider must respect your right that they “Do Not Sell” your personal information using an alternative implementation of the Global Privacy Control"
-              - "MyTerms: Negotiate and digitally sign mutually acceptable contract related to privacy and data sharing. Allows the person to proffer their privacy requirements to the service provider as contractual terms using IEEE 7012. [[**IEEE7012**]](#ref-ieee7012)."
+              - "**Privacy**: Provide legally binding notice that the service provider must respect your right that they “Do Not Sell” your personal information using an alternative implementation of the Global Privacy Control"
+              - "**MyTerms**: Negotiate and digitally sign mutually acceptable contract related to privacy and data sharing. Allows the person to proffer their privacy requirements to the service provider as contractual terms using IEEE 7012. [[**IEEE7012**]](#ref-ieee7012)."
 
-              - "AgeProtect: Signal the need for an age-protected experience (e.g. age-appropriate) and tell the service provider which age verification and consent management endpoints you use. [[**AgeProtect**]](#ref-ageprotect)."
+              - "**AgeProtect**: Signal the need for an age-protected experience (e.g. age-appropriate) and tell the service provider which age verification and consent management endpoints you use. [[**AgeProtect**]](#ref-ageprotect)."
 
-              - "Identifier: Tell the service provider who you are. Give them a (self-sovereign) digital identifier."
+              - "**Id**: Tell the service provider who you are. Give them a (self-sovereign) digital identifier."
 
-              - "IdP: Tell the service provider which IdP (identity provider(s)) you use. [[**NASCAR**]](#ref-nascar)."
+              - "**IdP**: Tell the service provider which IdP (identity provider(s)) you use. [[**NASCAR**]](#ref-nascar)."
 
-              - "SIOPv2: Tell the service provider that your agent supports OpenID SIOPv2 allowing the site/app to display a Continue-with-wallet button for password-less login. [[**SIOPv2**]](#ref-siopv2)."
+              - "**SIOPv2**: Tell the service provider that your agent supports OpenID SIOPv2 allowing the site/app to display a Continue-with-wallet button for password-less login. [[**SIOPv2**]](#ref-siopv2)."
 
-              - "PDN: Give the service provider your Personal Data Network endpoint to allow you to manage the personal information they hold about you."
+              - "**PDN**: Give the service provider your Personal Data Network endpoint to allow you to manage the personal information they hold about you."
 
   - number: "2"
     heading: "Definitions"
