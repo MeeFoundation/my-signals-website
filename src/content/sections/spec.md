@@ -46,7 +46,7 @@ sections:
       - number: "2"
         heading: "Limitations of Current Approaches"
         level: 3
-        content: "Adding custom `Sec-*` header fields has these disadvantages:"
+        content: "Implementing a handshake using custom `Sec-*` header fields has these disadvantages:"
         lists:
           - type: "ul"
             items:
