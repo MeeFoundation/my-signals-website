@@ -91,37 +91,38 @@ sections:
   - number: "2"
     heading: "Definitions"
     level: 2
+    content: "To do: add definitions of signaltype, ...."
     boxes:
       - type: "issue"
         title: "To be written"
         content: "This section will define key terms and concepts used throughout the specification."
 
   - number: "3"
-    heading: "Handshake Framework"
+    heading: "Handshake Process"
     level: 2
-    content: "This section describes the three step handshake process over HTTP"
+    content: "This section describes the three step process when implemented over HTTP."
     subsections:
       - number: "1"
-        heading: "Step 1: Initiate MySignals framework"
+        heading: "Step 1: Initiate MySignals"
         level: 3
         content: "The user agent MUST insert a Sec-MySignals header set to 1, for example:"
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-MySignals: 1"
       - number: "2"
-        heading: "Step 2: Acknowlege MySignals framework"
+        heading: "Step 2: Acknowlege MySignals"
         level: 3
-        content: "The server MUST respond with an Accept header:"
+        content: "The server MUST respond with an Accept-MySignals header:"
         code:
           language: "http"
-          content: "HTTP/1.1 200 OK\nAccept-MySignals: type=<signalType1>; type=<signalType2>"
+          content: "HTTP/1.1 200 OK\nAccept-MySignals: type=signaltype1; type=signaltype2; type=signaltypeN"
       - number: "3"
-        heading: "Step 3: Send specific signal(s)"
+        heading: "Step 3: Send signal(s)"
         level: 3
-        content: "The user agent MUST send one or more MySignals-specific headers specifying type and configuration. For example:"
+        content: "The user agent MUST send one or more MySignals headers specifying signaltype and configuration. For example if the signaltype is OpenIDConnect:"
         code:
           language: "http"
-          content: "GET /something/here HTTP/2\nHost: example.com\nSec-MySignals: type=OpenIDConnect; cfg=\"https://google.com/pcf.toml\""
+          content: "GET /something/here HTTP/2\nHost: example.com\nSec-MySignals: type=OpenIDConnect; cfg=\"https://google.com/mysignals.toml\""
 
   - number: "4"
     heading: "MySignals Support Resource"
