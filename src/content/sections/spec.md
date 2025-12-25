@@ -121,7 +121,7 @@ sections:
         content: "The user agent MUST send one or more MySignals-specific headers specifying type and configuration. For example:"
         code:
           language: "http"
-          content: "GET /something/here HTTP/2\nHost: example.com\nSec-MySignals: type=OpenIDConnect; cfg="https://google.com/pcf.toml"
+          content: "GET /something/here HTTP/2\nHost: example.com\nSec-MySignals: type=OpenIDConnect; cfg=\"https://google.com/pcf.toml\""
 
   - number: "4"
     heading: "MySignals Support Resource"
