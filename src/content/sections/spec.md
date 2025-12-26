@@ -50,7 +50,7 @@ sections:
         lists:
           - type: "ul"
             items:
-              - "Each field adds entropy to the HTTP header which increases the fingerprinting surface area exposed to the network, thus increasing tracking and privacy risk."
+              - "Each signaltype adds its own type of field to the HTTP header. Doing so adds entropy to the header which increases the fingerprinting surface area exposed to the network, thereby increasing tracking and associated privacy risks."
               - "It broadcasts this information to all websites on every request and thus doesn't allow the person's agent (e.g. user agent (browser)) to make decisions about how to respond to website's requests for more detailed data."
               - "The header field approach only works for websites, not apps."
               - "The GPC field transmits one scalar value (in this case a single boolean) whereas other signals contain multiple parameters and more structure and complexity."
@@ -62,7 +62,7 @@ sections:
         lists:
           - type: "ul"
             items:
-              - "Rather than the agent broadcasting the header to the webserver/app on every request, the webserver/app asks the agent for information. A discovery pattern similar to [[**ClientHints**]](#ref-clienthints) vs. a broadcast pattern similar to the `User-Agent` HTTP request header field along with each request."
+              - "MySignals uses broadcast pattern, including a generic MySignals field in every GET request, but it relies on a disovery pattern similar to [[**ClientHints**]](#ref-clienthints) wherein the server expresses the set of signaltypes it accepts (using an accept field) and the user agent responds with signals whose signaltype is a member of this set." 
               - "This discovery pattern reduces the fingerprinting surface area improving privacy characteristics and reducing network traffic."
               - "It supports structured, multi-parameter signals"
               - "It includes an optional URL parameter link to a configuration file for more granular information relevant to the signal."
