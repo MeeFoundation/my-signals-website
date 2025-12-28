@@ -3,7 +3,7 @@ enable: true
 # Banner
 note: ""
 title: "Say hello and signal your intent"
-description: MySignals is an introductory ceremony between you and a service provider. 
+description: MySignals is an introductory handshake between your agent and a service provider website/app. 
 
 image:
   src: "/images/banner.jpg" # Main Image
