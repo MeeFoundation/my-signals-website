@@ -58,7 +58,7 @@ sections:
       - number: "3"
         heading: "Purpose and Characteristics"
         level: 3
-        content: "MySignals is an introductory handshake between a person's agent and a service provider website/app. During this process the parties exchange signals, provide parameters, and negotiate how the person's agent will interact with the website/app. The purpose of MySignals is to provide a standardized framework for this handshake process. MySignals is an extensible framework standardizes only the name of implementation-specific signals that leverage it, but not their semantics. It has these characteristics:"
+        content: "MySignals is a handshake process between  a person's agent and a service provider website/app. It is an extensible communications framework that allows developers to define specific kinds of signals (signaltypes) that can be exchanged. It defines a common namespace for these signaltypes and a syntax for passing parameters. During this handshake each side shares the signaltypes it supports. It has these characteristics:"
         lists:
           - type: "ul"
             items:
