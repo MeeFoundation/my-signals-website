@@ -127,21 +127,21 @@ sections:
   - number: "4"
     heading: "Signaltypes"
     level: 2
-    content: "In step 3 when the agent is sending a specific signaltype, an optional config URI may be included. The value of signaltype MUST be one of:"
+    content: "In step 3 when the agent is sending a specific signaltype, an optional reference (URL) to a Signal Parameteres Resource may be included. The value of signaltype MUST be one of:"
     lists:
       - type: "ul"
         items:
-          - "GPCv2 - request to opt-out of sharing/selling their data. Same semantics as the Global Privacy Control [[**GPC**]](#ref-gpc)."
-          - "MyTerms - proffer privacy and data sharing terms using IEEE P7012. [[**IEEEP7012**]](#ref-ieeeP7012)."
-          - "AgeProtectv1 - request an age-appropriate experiece and that their agent implements AgeProtect"
-          - "IdKERI - request to the provided KERI identifier."
-          - "IdP - request to use a this identity provider."
-          - "SIOPv2 - request to log in using OpenID [[**SIOPv2**]](#ref-siopv2)."
+          - "**GPCv2** - request to opt-out of sharing/selling their data. Same semantics as the Global Privacy Control [[**GPC**]](#ref-gpc)."
+          - "**MyTerms** - proffer privacy and data sharing terms using IEEE P7012. [[**IEEEP7012**]](#ref-ieeeP7012)."
+          - "**AgeProtectv1** - request an age-appropriate experiece and that their agent implements AgeProtect"
+          - "**IdKERI** - request to the provided KERI identifier."
+          - "**IdP** - request to use a this identity provider."
+          - "**SIOPv2** - request to log in using OpenID [[**SIOPv2**]](#ref-siopv2)."
 
   - number: "5"
     heading: "Signal Parameters Resource reference"
     level: 2
-    content: "In step 3 when the agent is sending a specific signaltype, an optional Signal Parameters Resource (SPR) URL may be included. The SPR URL resolves to a Signal Parameters Resource (SPR)."
+    content: "In step 3 when the agent is sending a specific signaltype, an optional URL reference to a Signal Parameters Resource (SPR) may be included."
 
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
@@ -150,8 +150,8 @@ sections:
     lists: 
       - type: "ul"
         items:
-          - "title - a string of value \"Signal Parameters Resource\"."
-          - "version - a string indicating the version of the SPR format. MUST be \"v1\"."
+          - "**title** - a string of value \"Signal Parameters Resource\"."
+          - "**version** - a string indicating the version of the SPR resource's format. MUST be \"v1\"."
   
   - number: "7"
     heading: "Example Signal Parameters Resource"
