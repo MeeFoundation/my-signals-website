@@ -212,7 +212,12 @@ sections:
       - number: "1"
         heading: "Normative references"
         level: 3
-        content: "*None yet*"
+        lists:
+          - type: "dl" 
+            items: 
+              - term: "foo" 
+                id: "boo"
+                definition: "goo"
 
       - number: "2"
         heading: "Informative references"
