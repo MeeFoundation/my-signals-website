@@ -2,7 +2,7 @@
 enable: true
 title: "MySignals"
 
-subtitle: "Editor's Draft: 3 January 2025"
+subtitle: "Editor's Draft: 4 January 2025"
 
 versions:
   thisVersion: "[https://mysignals.org/spec/](https://mysignals.org/spec/)"
@@ -215,9 +215,9 @@ sections:
         lists:
           - type: "dl" 
             items: 
-              - term: "foo" 
-                id: "boo"
-                definition: "goo"
+              - term: "[TOML1.1]" 
+                id: "ref-toml1.1"
+                definition: "TOM1.1 spe. URL: https://toml.io/en/v1.1.0"
 
       - number: "2"
         heading: "Informative references"
