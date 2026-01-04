@@ -163,7 +163,7 @@ sections:
     content: "Example:"
     code:
       language: "http"
-      content: "title = \"Signal Parameter Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\n SIOPAuthorized = \"https://mee.foundation/authorize\""
+      content: "title = \"Signal Parameter Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\nSIOPAuthorized = \"https://mee.foundation/authorize\""
 
   
   - number: "8"
