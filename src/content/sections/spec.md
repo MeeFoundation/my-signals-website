@@ -154,10 +154,19 @@ sections:
     lists: 
       - type: "ul"
         items:
-          - "title - a strong of value \"Signal Parameter Resource\"."
+          - "title - a string of value \"Signal Parameter Resource\"."
           - "version - a string indicating the version of the SPR format. MUST be \"v1\"."
-
+  
   - number: "7"
+    heading: "Example SPR Resource"
+    level: 2
+    content: "Example:"
+    code:
+      language: "http"
+      content: "title = \"Signal Parameter Resource\"\nversion = \"1.0\"
+
+  
+  - number: "8"
     heading: "Privacy Considerations"
     level: 2
     boxes:
@@ -165,7 +174,7 @@ sections:
         title: "To be written"
         content: "This section will address privacy implications and considerations."
 
-  - number: "8"
+  - number: "9"
     heading: "Security Considerations"
     level: 2
     boxes:
@@ -173,7 +182,7 @@ sections:
         title: "To be written"
         content: "This section will address security implications and considerations."
 
-  - number: "9"
+  - number: "10"
     heading: "Automation"
     level: 2
     boxes:
@@ -181,7 +190,7 @@ sections:
         title: "To be written"
         content: "This section will address automation considerations."
 
-  - number: "10"
+  - number: "11"
     heading: "Conformance"
     level: 2
     boxes:
@@ -217,7 +226,7 @@ sections:
             items: 
               - term: "[TOML1.1]" 
                 id: "ref-toml1.1"
-                definition: "TOM1.1 spe. URL: https://toml.io/en/v1.1.0"
+                definition: "TOM1.1 spec. URL: https://toml.io/en/v1.1.0"
 
       - number: "2"
         heading: "Informative references"
