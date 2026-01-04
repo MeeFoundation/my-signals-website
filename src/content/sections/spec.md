@@ -150,7 +150,7 @@ sections:
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
     level: 2
-    content: "An SPR is a TOML format resource that contains additional parameters to pass with a signal. It has the following required fields:"
+    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It has the following required fields:"
     lists: 
       - type: "ul"
         items:
