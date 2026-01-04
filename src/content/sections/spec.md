@@ -158,9 +158,9 @@ sections:
           - "version - a string indicating the version of the SPR format. MUST be \"v1\"."
   
   - number: "7"
-    heading: "Example SPR Resource"
+    heading: "Example Signal Parameter Resource"
     level: 2
-    content: "Example:"
+    content: "The following example shows a SPR containing parameters for the SIOPv2 signal. Two URL-valued parameters are '''image''' and SIOPAuthorized."
     code:
       language: "http"
       content: "title = \"Signal Parameter Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\nSIOPAuthorized = \"https://mee.foundation/authorize\""
