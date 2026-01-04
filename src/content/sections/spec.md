@@ -156,8 +156,6 @@ sections:
         items:
           - "title - a strong of value \"Signal Parameter Resource\"."
           - "version - a string indicating the version of the SPR format. MUST be \"v1\"."
-    content: "The rest of the fields are determined by the specifics of the signaltype. Each signaltype has its own section of the SPR (e.g. \"[SIOPv2]\"), followed by zero or more fields and values."
-    content: "Here is an example SPR..."
 
   - number: "7"
     heading: "Privacy Considerations"
