@@ -154,16 +154,16 @@ sections:
     lists: 
       - type: "ul"
         items:
-          - "title - a string of value \"Signal Parameter Resource\"."
+          - "title - a string of value \"Signal Parameters Resource\"."
           - "version - a string indicating the version of the SPR format. MUST be \"v1\"."
   
   - number: "7"
-    heading: "Example Signal Parameter Resource"
+    heading: "Example Signal Parameters Resource"
     level: 2
-    content: "The following example shows a SPR containing parameters for the SIOPv2 signal. Two URL-valued parameters are '''image''' and SIOPAuthorized."
+    content: "The following example shows a SPR containing parameters for the SIOPv2 signal. Two URL-valued parameters are image and SIOPAuthorized."
     code:
       language: "http"
-      content: "title = \"Signal Parameter Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\nSIOPAuthorized = \"https://mee.foundation/authorize\""
+      content: "title = \"Signal Parameters Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\nSIOPAuthorized = \"https://mee.foundation/authorize\""
 
   
   - number: "8"
