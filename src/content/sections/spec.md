@@ -2,7 +2,7 @@
 enable: true
 title: "MySignals"
 
-subtitle: "Editor's Draft: 4b January 2025"
+subtitle: "Editor's Draft: 3 January 2025"
 
 versions:
   thisVersion: "[https://mysignals.org/spec/](https://mysignals.org/spec/)"
@@ -150,7 +150,7 @@ sections:
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
     level: 2
-    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It has the following required fields:"
+    content: "An SPR is a TOML format resource that contains additional parameters to pass with a signal. It has the following required fields:"
     lists: 
       - type: "ul"
         items:
@@ -212,18 +212,13 @@ sections:
       - number: "1"
         heading: "Normative references"
         level: 3
-        lists:
-          - type: "ul" 
-            items: 
-              - term: "[TOML1.1]"
-                id: "ref-toml1.1
-                definitions: "TOML1.1 spec. URL: https://toml.io/en/v1.1.0"
+        content: "*None yet*"
 
       - number: "2"
         heading: "Informative references"
         level: 3
         lists:
-          - type: "ul"
+          - type: "dl"
             items:
               - term: "[AgeProtect]"
                 id: "ref-ageprotect"
