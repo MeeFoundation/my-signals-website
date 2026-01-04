@@ -95,11 +95,7 @@ sections:
   - number: "2"
     heading: "Definitions"
     level: 2
-    content: "To do: add definitions of signaltype, config URI, Signal Parameters Resource...."
-    boxes:
-      - type: "issue"
-        title: "To be written"
-        content: "This section will define key terms and concepts used throughout the specification."
+    content: "A **signaltype** is string that uniquely specifies a type of signal that can be sent by a person to a service provider. Implementers of this spec MUST use signaltypes defined in section 4 below. The semantics of each signaltype are defined by an implementer--they are outside of the MySignals spec. When a signal of a given signaltype is sent other parameters may optionally be sent along with it. The definition and semantics of these parameters are also out of scope of the MySignals spec. <p/> A set of one or more parameters may be passed along with a signal by including a reference to a ***Signal Parameters Resource (SPR)*** that contains these parameters."
 
   - number: "3"
     heading: "Handshake Process"
@@ -109,7 +105,7 @@ sections:
       - number: "1"
         heading: "Step 1: Initiate MySignals"
         level: 3
-        content: "The user agent MUST insert a Sec-MS header set to 1, for example:"
+        content: "The user agent MUST insert a Sec-MS header field with a value of 1, for example:"
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-MS: 1"
@@ -143,7 +139,7 @@ sections:
           - "SIOPv2 - request to log in using OpenID [[**SIOPv2**]](#ref-siopv2)."
 
   - number: "5"
-    heading: "Signal Parameters Resource URL"
+    heading: "Signal Parameters Resource reference"
     level: 2
     content: "In step 3 when the agent is sending a specific signaltype, an optional Signal Parameters Resource (SPR) URL may be included. The SPR URL resolves to a Signal Parameters Resource (SPR)."
 
