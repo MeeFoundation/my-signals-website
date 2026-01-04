@@ -150,7 +150,7 @@ sections:
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
     level: 2
-    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It MUST include the title and version fields (see below). After these MUST follow one or more sections. The section label MUST be signaltype string (e.g. [SIOPv2]). Each section MUST contain one or more fields and values."
+    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It MUST include the '''title''' and '''version''' fields (see below). After these MUST follow one or more sections. The section label MUST be signaltype string (e.g. [SIOPv2]). Each section MUST contain one or more fields and values."
     lists: 
       - type: "ul"
         items:
@@ -160,7 +160,7 @@ sections:
   - number: "8"
     heading: "Example SPF Resource"
     level: 2
-    content: "title = \"Signal Parameter Resource\" version = 1.0 [SIOPv2] image - \"https://mee.foundation/continue-with-mee-smartwallet.png\"SIOPAuthorize = \"https://mee.foundation/authorize\""
+    content: "title = \"Signal Parameter Resource\"<br> version = 1.0<br>[SIOPv2] image - \"https://mee.foundation/continue-with-mee-smartwallet.png\"<br>SIOPAuthorize = \"https://mee.foundation/authorize\""
 
   - number: "9"
     heading: "Security Considerations"
@@ -213,7 +213,7 @@ sections:
           - type: "dl"
             term: "[TOML1.1]"
             id: "ref-toml1.1"
-            definition: "TOML1.1 spec. URL: https://toml.io/en/v1.1.0"
+            definition: "TOML1.1 spec. URL: https://toml.io/en/v1.1.0
 
 
       - number: "2"
