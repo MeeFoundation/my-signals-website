@@ -218,7 +218,7 @@ sections:
         heading: "Informative references"
         level: 3
         lists:
-          - type: "ul"
+          - type: "dl"
             items:
               - term: "[AgeProtect]"
                 id: "ref-ageprotect"
