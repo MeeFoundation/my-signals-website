@@ -150,7 +150,7 @@ sections:
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
     level: 2
-    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It has the following required fields:"
+    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It MUST contain the title and version fields. The rest of the fields are determined by the specifics of the signaltype. Each signaltype has its own section of the SPR (e.g. \"[SIOPv2]\") followed by one or more signaltype-specific fields."
     lists: 
       - type: "ul"
         items:
@@ -163,7 +163,7 @@ sections:
     content: "Example:"
     code:
       language: "http"
-      content: "title = \"Signal Parameter Resource\" \nversion = \"1.0\""
+      content: "title = \"Signal Parameter Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\n SIOPAuthorized = \"https://mee.foundation/authorize\""
 
   
   - number: "8"
