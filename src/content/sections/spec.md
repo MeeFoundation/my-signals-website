@@ -112,14 +112,14 @@ sections:
       - number: "2"
         heading: "Step 2: Acknowlege MySignals"
         level: 3
-        content: "The server MUST respond with an Accept-MS header:"
+        content: "The server MUST respond with an Accept-MS header specifying zero or more signaltypes that it supports:"
         code:
           language: "http"
-          content: "HTTP/1.1 200 OK\nAccept-MS: type=signaltype1; type=signaltype2; type=signaltypeN"
+          content: "HTTP/1.1 200 OK\nAccept-MS: type=signaltype1; type=signaltype2; ... type=signaltypeN"
       - number: "3"
         heading: "Step 3: Send signal(s)"
         level: 3
-        content: "The user agent MUST send one or more MySignals headers specifying signaltype and a Signal Parameters Resource (SPR) URL. For example if the signaltype is OpenIDConnect and the SPR is \"https://google.com/mysignals.toml\":"
+        content: "The user agent MUST send one or more MySignals headers specifying signaltype and a Signal Parameters Resource (SPR) URL. For example if the signaltype is \"OpenIDConnect\" and the SPR is \"https://google.com/mysignals.toml\":"
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-MS type=OpenIDConnect; SPR=\"https://google.com/mysignals.toml\""
@@ -131,12 +131,12 @@ sections:
     lists:
       - type: "ul"
         items:
-          - "**GPCv2** - request to opt-out of sharing/selling their data. Same semantics as the Global Privacy Control [[**GPC**]](#ref-gpc)."
-          - "**MyTerms** - proffer privacy and data sharing terms using IEEE P7012. [[**IEEEP7012**]](#ref-ieeeP7012)."
-          - "**AgeProtectv1** - request an age-appropriate experiece and that their agent implements AgeProtect"
-          - "**IdKERI** - request to the provided KERI identifier."
-          - "**IdP** - request to use a this identity provider."
-          - "**SIOPv2** - request to log in using OpenID [[**SIOPv2**]](#ref-siopv2)."
+          - "\"GPCv2\" - request to opt-out of sharing/selling their data. Same semantics as the Global Privacy Control [[**GPC**]](#ref-gpc)."
+          - "\"MyTerms\" - proffer privacy and data sharing terms using IEEE P7012. [[**IEEEP7012**]](#ref-ieeeP7012)."
+          - "\"AgeProtectv1\" - request an age-appropriate experiece and that their agent implements AgeProtect"
+          - "\"IdKERI\" - request to the provided KERI identifier."
+          - "\"IdP\" - request to use a this identity provider."
+          - "\"SIOPv2\" - request to log in using OpenID [[**SIOPv2**]](#ref-siopv2)."
 
   - number: "5"
     heading: "Signal Parameters Resource reference"
