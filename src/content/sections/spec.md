@@ -163,7 +163,7 @@ sections:
     content: "Example:"
     code:
       language: "http"
-      content: "title = \"Signal Parameter Resource\" version = \"1.0\""
+      content: "title = \"Signal Parameter Resource\" \nversion = \"1.0\""
 
   
   - number: "8"
