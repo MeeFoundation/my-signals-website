@@ -5,10 +5,10 @@
     "base_path": "/",
     "trailing_slash": true,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
+    "logo": "/images/my-signals-white.png",
     "logo_width": "124px",
     "logo_height": "26px",
-    "logo_footer": "/images/logo.svg",
+    "logo_footer": "/images/my-signals-white.png",
     "logo_footer_width": "225px",
     "logo_footer_height": "48px",
     "logo_text": "Darkrise"

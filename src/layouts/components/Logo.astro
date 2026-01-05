@@ -35,13 +35,16 @@ const {
   href="/"
   class={`navbar-brand inline-block${
     !logo || !logo_footer ? " logo-text" : ` `
-  }`}>
+  }`}
+>
   {
     src || logo || logo_footer ? (
       <>
         {footerLogo ? (
           <ImageMod
-            src={logo_footer ? logo_footer : src || "/images/logo.svg"}
+            src={
+              logo_footer ? logo_footer : src || "/images/my-signals-white.png"
+            }
             class={`inline-block ${className ? className : ""}`}
             width={logo_footer_width.replace("px", "") * 2}
             height={logo_footer_height.replace("px", "") * 2}
