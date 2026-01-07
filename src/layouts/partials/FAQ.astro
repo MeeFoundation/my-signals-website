@@ -38,11 +38,12 @@ const { title, bg_image, description, image, id, explanation } =
             </div>
           </div>
         </div>
-
-        <div
-          class="[&_ul]:list-disc [&_ul]:list-inside [&_ul]:pt-4 [&_li]:pt-2 text-center [&_h6]:tracking-normal [&_h6]:pt-8"
-          set:html={markdownify(explanation, true)}
-        />
+        <div data-aos="fade-up-sm">
+          <div
+            class="[&_ul]:list-disc [&_ul]:list-inside [&_ul]:pt-4 [&_li]:pt-2 text-center [&_h6]:tracking-normal [&_h6]:pt-8"
+            set:html={markdownify(explanation, true)}
+          />
+        </div>
       </div>
 
       <!-- <div aria-hidden="true">

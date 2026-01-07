@@ -58,19 +58,23 @@ const {
             )
           }
         </div>
-        <div
-          class="[&_ul]:list-disc [&_ul]:list-inside [&_ul]:pt-8 [&_li]:pt-4 text-center [&_p]:pt-16"
-          set:html={markdownify(explanation, true)}
-        />
+        <div data-aos="fade-up-sm">
+          <div
+            class="[&_ul]:list-disc [&_ul]:list-inside [&_ul]:pt-8 [&_li]:pt-4 text-center [&_p]:pt-16"
+            set:html={markdownify(explanation, true)}
+          />
+        </div>
       </div>
-      <div class="flex flex-row justify-center pt-16">
-        <iframe
-          width="560"
-          height="315"
-          src=`https://www.youtube.com/embed/${embedVideoId}`
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+      <div data-aos="fade-up-sm">
+        <div class="flex flex-row justify-center pt-16">
+          <iframe
+            width="560"
+            height="315"
+            src=`https://www.youtube.com/embed/${embedVideoId}`
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
       <!-- <div aria-hidden="true">
         <ImageMod
