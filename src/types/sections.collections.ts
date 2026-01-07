@@ -73,7 +73,12 @@ export const faqSection = defineCollection({
     image: z.string(),
     bg_image: z.string(),
     description: z.string(),
-    explanation: z.string(),
+    items: z.array(
+      z.object({
+        question: z.string(),
+        answer: z.string(),
+      }),
+    ),
   }),
 });
 
