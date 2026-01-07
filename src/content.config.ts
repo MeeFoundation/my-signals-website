@@ -27,6 +27,7 @@ import {
   valuesSection,
   descriptionSection,
   specSection,
+  faqSection,
 } from "./types/sections.collections";
 
 // Export collections
@@ -60,4 +61,5 @@ export const collections = {
   valuesSection,
   descriptionSection,
   specSection,
+  faqSection,
 };

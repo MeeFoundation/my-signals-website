@@ -26,7 +26,12 @@ export const ctaSection1 = defineCollection({
     image: z.string(),
     bg_image: z.string(),
     description: z.string(),
-    button: z.object({
+    button_github: z.object({
+      enable: z.boolean(),
+      label: z.string(),
+      link: z.string(),
+    }),
+    button_discord: z.object({
       enable: z.boolean(),
       label: z.string(),
       link: z.string(),
@@ -46,11 +51,29 @@ export const descriptionSection = defineCollection({
     image: z.string(),
     bg_image: z.string(),
     description: z.string(),
+    explanation: z.string(),
+    embedVideoId: z.string(),
     button: z.object({
       enable: z.boolean(),
       label: z.string(),
       link: z.string(),
     }),
+  }),
+});
+
+export const faqSection = defineCollection({
+  loader: glob({
+    pattern: "faq.{md,mdx}",
+    base: "src/content/sections",
+  }),
+  schema: z.object({
+    id: z.string(),
+    enable: z.boolean(),
+    title: z.string(),
+    image: z.string(),
+    bg_image: z.string(),
+    description: z.string(),
+    explanation: z.string(),
   }),
 });
 

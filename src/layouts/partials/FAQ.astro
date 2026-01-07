@@ -4,26 +4,20 @@ import ImageMod from "@/components/ImageMod.astro";
 import { getListPage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 
-const sectionData = await getListPage("descriptionSection", "description");
+const sectionData = await getListPage("faqSection", "faq");
 if (!sectionData.data.enable) {
   return null;
 }
 
-const {
-  title,
-  bg_image,
-  description,
-  image,
-  button,
-  id,
-  explanation,
-  embedVideoId,
-} = sectionData.data;
+const { title, bg_image, description, image, id, explanation } =
+  sectionData.data;
 ---
 
 <section class="section" id={id}>
   <div class="container">
-    <div class="relative overflow-hidden rounded-2xl p-7 md:p-10 lg:p-16">
+    <div
+      class="relative overflow-hidden rounded-2xl px-7 pb-7 md:px-10 md:pb-10 lg:px-16 lg:pb-16"
+    >
       <div
         class="flex flex-col justify-start items-center relative text-center z-10 lg:gy-0"
       >
@@ -45,33 +39,12 @@ const {
           </div>
         </div>
 
-        <div class="" data-aos="fade-right-sm" data-aos-delay="150">
-          {
-            button.enable && (
-              <AnimatedAnchor
-                className="btn-primary "
-                link={button.link}
-                label={button.label}
-                data-aos="fade-up-sm"
-                data-aos-delay="100"
-              />
-            )
-          }
-        </div>
         <div
-          class="[&_ul]:list-disc [&_ul]:list-inside [&_ul]:pt-8 [&_li]:pt-4 text-center [&_p]:pt-16"
+          class="[&_ul]:list-disc [&_ul]:list-inside [&_ul]:pt-4 [&_li]:pt-2 text-center [&_h6]:tracking-normal [&_h6]:pt-8"
           set:html={markdownify(explanation, true)}
         />
       </div>
-      <div class="flex flex-row justify-center pt-16">
-        <iframe
-          width="560"
-          height="315"
-          src=`https://www.youtube.com/embed/${embedVideoId}`
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
+
       <!-- <div aria-hidden="true">
         <ImageMod
           class="absolute inset-0 z-0 h-full w-full object-contain object-bottom-left"

@@ -9,7 +9,15 @@ if (!sectionData.data.enable) {
   return null;
 }
 
-const { title, bg_image, description, image, button, id } = sectionData.data;
+const {
+  title,
+  bg_image,
+  description,
+  image,
+  button_discord,
+  button_github,
+  id,
+} = sectionData.data;
 ---
 
 <section class="section" id={id}>
@@ -36,13 +44,28 @@ const { title, bg_image, description, image, button, id } = sectionData.data;
           </div>
         </div>
 
-        <div class="" data-aos="fade-right-sm" data-aos-delay="150">
+        <div
+          class="flex flex-row justify-between gap-16"
+          data-aos="fade-right-sm"
+          data-aos-delay="150"
+        >
           {
-            button.enable && (
+            button_github.enable && (
               <AnimatedAnchor
                 className="btn-primary "
-                link={button.link}
-                label={button.label}
+                link={button_github.link}
+                label={button_github.label}
+                data-aos="fade-up-sm"
+                data-aos-delay="100"
+              />
+            )
+          }
+          {
+            button_discord.enable && (
+              <AnimatedAnchor
+                className="btn-primary "
+                link={button_discord.link}
+                label={button_discord.label}
                 data-aos="fade-up-sm"
                 data-aos-delay="100"
               />
