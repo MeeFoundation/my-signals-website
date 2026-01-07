@@ -5,6 +5,8 @@ export const slugify = (content: string) => {
   return slug(content);
 };
 
+marked.use({ gfm: true });
+
 export const markdownify = (content: string, div?: boolean) => {
   return div ? marked.parse(content) : marked.parseInline(content);
 };
