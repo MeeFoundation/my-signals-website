@@ -11,12 +11,10 @@ button:
   link: "/spec/"
 embedVideoId: "rAEjlG6QO8s"
 explanation: |
-  **MySignals is a handshake process between a person’s agent and a service provider website/app.**
-  
-  * It's an extensible communications framework that allows developers to define specific kinds of signals (signaltypes) that can be exchanged. It defines a common namespace for these signaltypes and a syntax for passing parameters. During this handshake each side conveys the signaltypes it supports
+  ### **MySignals is a handshake process between a person’s agent and a service provider website/app.**
+  It's an extensible communications framework that allows developers to define specific kinds of signals (signaltypes) that can be exchanged. It defines a common namespace for these signaltypes and a syntax for passing parameters. During this handshake each side conveys the signaltypes it supports.
   
   **Here are some examples of what can be negotiated between the parties:**
-  
   * **Privacy**: Provide legally binding notice to the service provider that it must respect your right that they “Do Not Sell” your personal information. MySignals provides an alternate implementation of the [Global Privacy Control](https://globalprivacycontrol.org/). 
   * **MyTerms**: Negotiate and digitally sign mutually acceptable contracts related to privacy and data sharing using [IEEE 7012](https://standards.ieee.org/ieee/7012/7192/).
   * **AgeProtect**: Signal the need for an age-appropriate experience from the service provider, and tell them which age verification and consent management endpoints you use.
