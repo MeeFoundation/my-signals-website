@@ -13,9 +13,7 @@ embedVideoId: "rAEjlG6QO8s"
 explanation: |
   **MySignals is a handshake process between a person’s agent and a service provider website/app.**
   
-  * It is an extensible communications framework that allows developers to define specific kinds of signals (signaltypes) that can be exchanged
-  * It defines a common namespace for these signaltypes and a syntax for passing parameters
-  * During this handshake each side conveys the signaltypes it supports
+  * It's an extensible communications framework that allows developers to define specific kinds of signals (signaltypes) that can be exchanged. It defines a common namespace for these signaltypes and a syntax for passing parameters. During this handshake each side conveys the signaltypes it supports
   
   **Here are some examples of what can be negotiated between the parties:**
   
