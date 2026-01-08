@@ -80,7 +80,7 @@ sections:
         lists:
           - type: "ul"
             items:
-              - "**Privacy**: Provide legally binding notice to the service provider that it must respect your right that they “Do Not Sell” your personal information. MySignals provides an alternate implementation of the Global Privacy Control [[**GPC**]](#ref-gpc)."
+              - "**Privacy**: Provide legally binding notice to the service provider that it must respect your right that they “Do Not Sell” your personal information. MySignals provides an alternative mechanism to convey the Global Privacy Control [[**GPC**]](#ref-gpc) signal semantic."
 
               - "**MyTerms**: Negotiate and digitally sign mutually acceptable contracts related to privacy and data sharing using IEEE P7012. [[**IEEEP7012**]](#ref-ieeeP7012)."
 
