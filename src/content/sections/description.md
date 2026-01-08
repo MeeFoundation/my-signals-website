@@ -16,11 +16,12 @@ explanation: |
   
   |    Signal    |  Description |
   | :----------: | :----------: |
-  | **Privacy**  | Provide legally binding notice to the service provider that it must respect your right that they “Do Not Sell” your personal information. MySignals provides an alternate implementation of the [Global Privacy Control](https://globalprivacycontrol.org/).  |
-  |  **MyTerms** | Negotiate and digitally sign mutually acceptable contracts related to privacy and data sharing using [IEEE 7012](https://standards.ieee.org/ieee/7012/7192/).|
-  | **AgeProtect** | Signal the need for an age-appropriate experience from the service provider, and tell them which age verification and consent management endpoints you use. |
+  | **Privacy**  | Proffer your legally binding notice to the service provider that it must respect your right that they “Do Not Sell” your personal information. MySignals provides an alternate implementation of the [Global Privacy Control](https://globalprivacycontrol.org/).  |
+  |  **MyTerms** | Proffer, negotiate and digitally sign mutually acceptable contracts related to privacy and data sharing using [IEEE 7012](https://standards.ieee.org/ieee/7012/7192/).|
+  | **AgeProtect** | Request an age-appropriate experience from the service provider, and proffer your age verification and consent management endpoints. |
   | **Identity** | Tell the service provider who you are. Give them a (self-sovereign) digital identifier.  |
-  | **IdP** | Tell the service provider which IdP (identity provider(s)) you use.  This solves the [NASCAR](https://apicrazy.com/2014/07/22/nascar-problem-in-authorisation-server-selection/) problem. |
+  | **KERI-AID** | Proffer your KERI Autonomic identifier. |
+  | **IdP** | Proffer the IdP(s) (identity provider(s)) you use.  This solves the [NASCAR](https://apicrazy.com/2014/07/22/nascar-problem-in-authorisation-server-selection/) problem. |
   | **SIOPv2** | Tell the service provider that your agent supports OpenID SIOPv2 allowing their site/app to display a “Continue with wallet” button for password-less login. |
-  | **PDN** | Give the service provider your Personal Data Network endpoint to allow your agent to manage the personal information the provider holds about you. |
+
 ---

@@ -134,7 +134,7 @@ sections:
           - "\"GPCv2\" - request to opt-out of sharing/selling their data. Same semantics as the Global Privacy Control [[**GPC**]](#ref-gpc)."
           - "\"MyTerms\" - proffer privacy and data sharing terms using IEEE P7012. [[**IEEEP7012**]](#ref-ieeeP7012)."
           - "\"AgeProtectv1\" - request an age-appropriate experiece and that their agent implements AgeProtect"
-          - "\"IdKERI\" - request to the provided KERI identifier."
+          - "\"IdKERI\" - proffer the person's KERI AID."
           - "\"IdP\" - request to use a this identity provider."
           - "\"SIOPv2\" - request to log in using OpenID [[**SIOPv2**]](#ref-siopv2)."
 
