@@ -88,6 +88,8 @@ sections:
 
               - "**Identity**: Tell the service provider who you are. Give them a (self-sovereign) digital identifier."
 
+              - "**KERI-AID**: Proffer your KERI Autonomic identifier."
+
               - "**IdP**: Tell the service provider which IdP (identity provider(s)) you use. This solves the [[**NASCAR**]](#ref-nascar) problem."
 
               - "**SIOPv2**: Tell the service provider that your agent supports OpenID SIOPv2 allowing their site/app to display a “Continue with wallet” button for password-less login. [[**SIOPv2**]](#ref-siopv2)."
