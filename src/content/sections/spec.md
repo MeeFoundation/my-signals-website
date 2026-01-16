@@ -63,9 +63,9 @@ sections:
           - type: "ul"
             items:
               - "It follows a three step process flow."
-              - "In the first step the agent includes a Sec=MS=1 field in the GET request. This announces that agent supports the MySignals framework."
-              - "In the second step, if the site/app supports MySignals it acknowledges this by including an Accept-MS field that includes the set of the signaltypes it supports (if any)"
-              - "In the third step, the agent includes in the GET request a Sec=MS=... field that includes a subset of the set from step two that are acceptable to the agent."
+              - "In the first step the agent includes a Sec-MS: 1 field in the GET request. This announces that agent supports the MySignals framework itself."
+              - "In the second step, if the site/app supports the MySignals framework it acknowledges this by including an Accept-MS field that includes the set of specific signaltypes it supports (if any)"
+              - "In the third step, the agent includes in the GET request a Sec-MS type=<signaltype>... field that includes a subset of the set from step two that are acceptable to the agent."
               - "If not empty, this subset defines the mutually agreed set of signaltypes that both parties agree to."
               - "Steps two and three follow a discovery pattern similar to that used in  [[**ClientHints**]](#ref-clienthints)"
               - "This discovery pattern reduces the fingerprinting surface area improving privacy characteristics and reducing network traffic."
