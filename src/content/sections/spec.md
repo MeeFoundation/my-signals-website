@@ -2,7 +2,7 @@
 enable: true
 title: "MySignals"
 
-subtitle: "Editor's Draft: 4 January 2025"
+subtitle: "Editor's Draft: 17 January 2025"
 
 versions:
   thisVersion: "[https://mysignals.org/spec/](https://mysignals.org/spec/)"
@@ -97,7 +97,7 @@ sections:
   - number: "2"
     heading: "Definitions"
     level: 2
-    content: "A **signaltype** is string that uniquely specifies a type of signal that can be sent by a person to a service provider. Implementers of this spec MUST use signaltypes defined in section 4 below. The semantics of each signaltype are defined by an implementer--they are outside of the MySignals spec. When a signal of a given signaltype is sent other parameters may optionally be sent along with it. The definition and semantics of these parameters are also out of scope of the MySignals spec. <p/> A set of one or more parameters may be passed along with a signal by including a reference to a ***Signal Parameters Resource (SPR)*** that contains these parameters."
+    content: "A **signaltype** is string that uniquely specifies a type of signal that can be sent by a person to a service provider. Implementers of this spec MUST use signaltypes defined in section 4 below. The semantics of each signaltype are defined by an implementer--they are outside of the MySignals spec. When a signal of a given signaltype is sent other parameters MAY be sent along with it. The definition and semantics of these parameters are also out of scope of the MySignals spec. <p/> A set of one or more parameters MAY be passed along with a signal by including a reference to a ***Signal Parameters Resource (SPR)*** that contains these parameters."
 
   - number: "3"
     heading: "Handshake Process"
@@ -129,7 +129,7 @@ sections:
   - number: "4"
     heading: "Signaltypes"
     level: 2
-    content: "In step 3 when the agent is sending a specific signaltype, an optional reference (URL) to a Signal Parameteres Resource may be included. The value of signaltype MUST be one of:"
+    content: "In step 3 when the agent is sending a specific signaltype, an optional reference (URL) to a Signal Parameteres Resource MAY be included. The value of signaltype MUST be one of:"
     lists:
       - type: "ul"
         items:
@@ -143,7 +143,7 @@ sections:
   - number: "5"
     heading: "Signal Parameters Resource reference"
     level: 2
-    content: "In step 3 when the agent is sending a specific signaltype, an optional URL reference to a Signal Parameters Resource (SPR) may be included."
+    content: "In step 3 when the agent is sending a specific signaltype, an optional URL reference to a Signal Parameters Resource (SPR) MAY be included."
 
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
