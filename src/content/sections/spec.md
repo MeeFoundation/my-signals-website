@@ -39,7 +39,7 @@ sections:
         heading: "Background"
         level: 3
         content: "For the past two decades, hundreds of independent developers, and organized groups have explored different paths to restore the power imbalance we've described. A main thrust of this work is the development personal agents and other kinds of “empowerment” tools that work “on the individual's side” [**ProjectVRM**] and represent their interests.<p/> 
-        Possibly the simplest example of “empowerment” tooling is a browser that implements the Global Privacy Control [[**GPC**]](#ref-gpc). The GPC is signal from the browser communicates the person's Do Not Sell or Share request to the service provider. This signal is legally binding under the California Consumer Privacy Act, and similar state privacy laws that allow users to opt out of data sales or the use of their data for cross-context targeted advertising. The GPC signal was implemented by adding a \"Sec-GPC: 1\" field to user agent HTTP header in HTTP Request messages sent to the web server. For example:"
+        Possibly the simplest example of “empowerment” tooling is a browser that implements the Global Privacy Control [[**GPC**]](#ref-gpc). The GPC is signal from the browser communicates the person's Do Not Sell or Share request to the service provider. This signal is legally binding under the California Consumer Privacy Act, and similar state privacy laws that allow users to opt out of data sales or the use of their data for cross-context targeted advertising. The GPC signal was implemented by adding a `Sec-GPC: 1` field to user agent HTTP header in HTTP Request messages sent to the web server. For example:"
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-GPC: 1"
@@ -63,9 +63,9 @@ sections:
           - type: "ul"
             items:
               - "It follows a three step process flow."
-              - "In the first step the agent includes a \"Sec-MS: 1\" field in the GET request. This announces that agent supports the MySignals framework itself."
+              - "In the first step the agent includes a `Sec-MS: 1` field in the GET request. This announces that agent supports the MySignals framework itself."
               - "In the second step, if the site/app supports the MySignals framework it acknowledges this by including an Accept-MS field that includes the set of specific signaltypes it supports (if any)"
-              - "In the third step, the agent includes in the GET request a \"Sec-MS type=<signaltype>...\" field that includes a subset of the set from step two that are acceptable to the agent."
+              - "In the third step, the agent includes in the GET request a `Sec-MS type=<signaltype>...` field that includes a subset of the set from step two that are acceptable to the agent."
               - "If not empty, this subset defines the mutually agreed set of signaltypes that both parties agree to."
               - "Steps two and three follow a discovery pattern similar to that used in [[**ClientHints**]](#ref-clienthints)"
               - "This discovery pattern reduces the fingerprinting surface area thereby improving privacy characteristics and reducing network traffic."
