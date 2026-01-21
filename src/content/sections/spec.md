@@ -105,23 +105,23 @@ sections:
     content: "This section describes the three step process when implemented over HTTP."
     subsections:
       - number: "1"
-        heading: "Step 1: Initiate MySignals"
+        heading: "Step 1: Initiate MySignals Framework"
         level: 3
-        content: "The user agent MUST insert a Sec-MS header field with a value of 1, for example:"
+        content: "The user agent MUST insert a `Sec-MS` header field with a value of 1, for example:"
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-MS: 1"
       - number: "2"
         heading: "Step 2: Acknowlege MySignals"
         level: 3
-        content: "The server MUST respond with an Accept-MS header specifying zero or more signaltypes that it supports:"
+        content: "The server MUST respond with an `Accept-MS` header field if it supports the MySignals framework. If it supports the MySignals frameork the `Accept-MS` field MUST specifying one or more supported signaltypes:"
         code:
           language: "http"
           content: "HTTP/1.1 200 OK\nAccept-MS: type=signaltype1; type=signaltype2; ... type=signaltypeN"
       - number: "3"
         heading: "Step 3: Send signal(s)"
         level: 3
-        content: "The user agent MUST send one or more MySignals headers specifying signaltype and a Signal Parameters Resource (SPR) URL. For example if the signaltype is \"OpenIDConnect\" and the SPR is \"https://google.com/mysignals.toml\":"
+        content: "The user agent MUST send one or more MySignals headers specifying the signaltype string value along with an optional Signal Parameters Resource (SPR) URL value. The example below shows a signaltype of \"OpenIDConnect\" and an SPR URL \"https://google.com/mysignals.toml\":"
         code:
           language: "http"
           content: "GET /something/here HTTP/2\nHost: example.com\nSec-MS type=OpenIDConnect; SPR=\"https://google.com/mysignals.toml\""
