@@ -121,10 +121,10 @@ sections:
       - number: "3"
         heading: "Step 3: Send signal(s)"
         level: 3
-        content: "The user agent MUST send one or more MySignals headers specifying the signaltype string value along with an optional Signal Parameters Resource (SPR) URL value. The example below shows a signaltype of \"OpenIDConnect\" and an SPR URL \"https://google.com/mysignals.toml\":"
+        content: "The user agent MUST send one or more MySignals headers specifying the signaltype string value along with an optional Signal Parameters Resource (SPR) URL value. The example below shows a signaltype of \"OpenIDConnect\" and an SPR URL \"https://google.com/mysignals.json\":"
         code:
           language: "http"
-          content: "GET /something/here HTTP/2\nHost: example.com\nSec-MS type=OpenIDConnect; SPR=\"https://google.com/mysignals.toml\""
+          content: "GET /something/here HTTP/2\nHost: example.com\nSec-MS type=OpenIDConnect; SPR=\"https://google.com/mysignals.json\""
 
   - number: "4"
     heading: "Signaltypes"
@@ -148,7 +148,7 @@ sections:
   - number: "6"
     heading: "Signal Parameters Resource (SPR)"
     level: 2
-    content: "An SPR is a [[**TOML1.1**]](#ref-toml1.1) format resource that contains additional parameters to pass with a signal. It MUST contain the title and version fields. The rest of the fields are determined by the specifics of the signaltype. Each signaltype has its own section of the SPR (e.g. \"[SIOPv2]\") followed by one or more signaltype-specific fields."
+    content: "An SPR is a [[**JSON**]](#ref-json) format resource that contains additional parameters to pass with a signal. It MUST contain the title and version fields. The rest of the fields are determined by the specifics of the signaltype. Each signaltype has its own section of the SPR (e.g. \"[SIOPv2]\") followed by one or more signaltype-specific fields."
     lists: 
       - type: "ul"
         items:
@@ -222,9 +222,9 @@ sections:
         lists:
           - type: "dl" 
             items: 
-              - term: "[TOML1.1]" 
-                id: "ref-toml1.1"
-                definition: "TOM1.1 spec. URL: https://toml.io/en/v1.1.0"
+              - term: "[JSON]" 
+                id: "ref-json"
+                definition: "JSON spec. URL: https://www.rfc-editor.org/rfc/rfc8259"
 
       - number: "2"
         heading: "Informative references"
