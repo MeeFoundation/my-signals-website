@@ -1,8 +1,7 @@
----
 enable: true
 title: "MySignals"
 
-subtitle: "Editor's Draft: 17 January 2025"
+subtitle: "Editor's Draft: 30 January 2026"
 
 versions:
   thisVersion: "[https://mysignals.org/spec/](https://mysignals.org/spec/)"
@@ -11,6 +10,7 @@ versions:
 
 editors:
   - "Paul Trevithick (Mee Foundation)"
+  - "Alexey Pepeskul (Swift Invention)"
 
 feedback: "[https://github.com/MeeFoundation/my-signals-website](https://github.com/MeeFoundation/my-signals-website) (pull requests, new issue, open issues)"
 
@@ -160,8 +160,16 @@ sections:
     level: 2
     content: "The following example shows a SPR containing parameters for the \"SIOPv2\" signaltype. Two URL-valued parameters are \"image\" and \"SIOPAuthorized\"."
     code:
-      language: "http"
-      content: "title = \"Signal Parameters Resource\"\nversion = \"1.0\"\n[SIOPv2]\nimage = \"https://mee.foundation/continue-with-mee-smartwallet.png\"\nSIOPAuthorized = \"https://mee.foundation/authorize\""
+      language: "json"
+          content: |
+            {
+              "title": "Signal Parameters Resource",
+              "version": "1.0",
+              "SIOPv2": {
+                "image": "https://mee.foundation/continue-with-mee-smartwallet.png",
+                "SIOPAuthorized": "https://mee.foundation/authorize"
+              }
+            }
 
   
   - number: "8"
