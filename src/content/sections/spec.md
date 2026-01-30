@@ -162,15 +162,15 @@ sections:
     content: "The following example shows a SPR containing parameters for the \"SIOPv2\" signaltype. Two URL-valued parameters are \"image\" and \"SIOPAuthorized\"."
     code:
       language: "json"
-          content: |
-            {
-              "title": "Signal Parameters Resource",
-              "version": "1.0",
-              "SIOPv2": {
-                "image": "https://mee.foundation/continue-with-mee-smartwallet.png",
-                "SIOPAuthorized": "https://mee.foundation/authorize"
-              }
-            }
+      content: |
+        {
+          "title": "Signal Parameters Resource",
+          "version": "1.0",
+          "SIOPv2": {
+            "image": "https://mee.foundation/continue-with-mee-smartwallet.png",
+            "SIOPAuthorized": "https://mee.foundation/authorize"
+          }
+        }
 
   
   - number: "8"
